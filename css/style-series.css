@@ -1,0 +1,97 @@
+
+/* Estilização main */
+
+h1 {
+  text-align: center;
+  margin: 1em;
+  margin-top: 7rem;
+  color: var(--blue);
+}
+
+.dorama-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.dorama-card {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--blue);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-left: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.dorama-card:hover {
+  transform: scale(1.05);
+}
+
+.dorama-card img {
+  width: 100%;
+  height: 25em;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.dorama-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--dark-text);
+}
+
+.dorama-card p {
+  font-size: 14px;
+  color: var(--dark-text);
+  line-height: 1.5;
+  height: 8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.button-container a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--blue);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 4px 5px 4px rgba(85, 48, 248, 0.349);
+  transition: background-color 0.3s ease;
+}
+
+.button-container a:hover {
+  background-color: var(--dark);
+}
+
+/* Estilização footer */
+
+footer {
+  background-color: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 0.5rem 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 13px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .dorama-grid {
+    grid-template-columns: 1fr;
+  }
+
+ .dorama-card {
+  margin-top: 1.5em;
+  width: 90%;
+} 
+}

@@ -1,0 +1,80 @@
+
+body {
+  color: var(--dark);
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 60px;
+}
+
+/* Estilização main */
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 80%;
+  gap: 1rem;
+}
+
+.carousel img {
+  max-width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.1);
+}
+
+#actor-info,
+#actress-info {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#actor-details,
+#actress-details {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 80%;
+}
+
+.selected {
+  border: 5px solid var(--dark);
+  transform: scale(1.1);
+}
+
+/* Estilização footer */
+
+footer {
+  background-color: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 0.5rem 0;
+  margin-top: 0.8em;
+  bottom: 0;
+  width: 100%;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 785px) {
+  .carousel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel img {
+    max-width: calc(100% - 20px);
+    max-height: 300px;
+  }
+}

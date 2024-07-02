@@ -1,0 +1,189 @@
+
+/* Estilização main */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 8em;
+}
+
+.card {
+  border: solid 2px var(--blue);
+  margin-left: 1.5em;
+  width: 19em;
+  height: 40em;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 50%;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-content p {
+  margin-bottom: 20px;
+  color: var(--dark-text);
+  text-align: justify;
+}
+
+.card-content h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: var(--blue);
+  border: none;
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: var(--dark);
+}
+
+.container-contact {
+  padding: 0 10rem 0 10rem;
+}
+
+.container-contact h2 {
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+  color: var(--blue);
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  border-radius: 10px;
+  background-color: var(--white);
+  padding: 1.5rem;
+  height: 19em;
+  border: solid 1px var(--blue);
+}
+
+form h3 {
+  text-align: center;
+  color: var(--blue);
+  font-size: 1rem;
+}
+
+.container-contact .container-form .map {
+  width: 100%;
+  flex: 1rem;
+}
+
+.inputform {
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.inputform input {
+  width: 100%;
+  padding: 3px;
+}
+
+.inputform textarea {
+  width: 100%;
+  padding: 20px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background: var(--blue);
+  border: none;
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: var(--dark);
+}
+
+.adress {
+  display: inline;
+}
+.adress-details {
+  margin: 20px;
+  text-align: center;
+}
+
+.text {
+  font-size: 12px;
+  color: var(--dark);
+}
+
+.topic {
+  font-size: 18px;
+  color: var(--blue);
+}
+
+/* Estilização footer */
+
+footer {
+  background-color: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 0.5rem 0;
+  margin-top: 0.8em;
+  bottom: 0;
+  width: 100%;
+  font-size: 13px;
+}
+
+
+@media screen and (max-width: 785px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 1.5em;
+  }
+
+  .container-contact {
+    padding: 0 1rem;
+  }
+
+  form {
+    width: 100%;
+    padding: 1rem;
+  }
+}

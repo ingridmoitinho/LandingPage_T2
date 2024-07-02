@@ -1,0 +1,59 @@
+
+/* Estilização main */
+
+.home {
+  width: 100%;
+  height: 49rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15%;
+}
+.home-text {
+  max-width: 40rem;
+}
+.home-text .text-h4 {
+  font-size: 1.5rem;
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
+.home-text .text-h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+}
+.home-text p {
+  margin-bottom: 4rem;
+}
+.home-btn {
+  padding: 15px 45px;
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+.home-btn:hover {
+  background: var(--dark);
+}
+.home-img img {
+  width: 85%;
+}
+
+/* Estilização footer */
+footer {
+  background-color: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 0.5rem 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 13px;
+}
+
+@media (max-width: 785px) {
+ .home-img  img {
+    width: 10em;
+}
+  
+}

@@ -52,8 +52,31 @@ footer {
 }
 
 @media (max-width: 785px) {
- .home-img  img {
-    width: 10em;
-}
-  
-}
+  .home {
+    flex-direction: column;
+    height: auto;
+    padding: 0 5%;
+    text-align: center;    
+  }
+  .home-text {
+    max-width: 100%;
+    margin-top: 3em;
+  }
+  .home-text .text-h4 {
+    font-size: 1.2rem;
+    margin-top: 2em;
+  }
+  .home-text .text-h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .home-text p {
+    margin-bottom: 2rem;
+  }
+  .home-btn {
+    padding: 10px 30px;
+  }
+  .home-img img {
+    width: 60%;
+    margin: 2rem 0;
+  } }
